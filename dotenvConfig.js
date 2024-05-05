@@ -1,4 +1,4 @@
-export default () => {
+module.exports=() => {
     const dotenv = require('dotenv')
     const path = require('path/posix')
 

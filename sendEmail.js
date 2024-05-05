@@ -1,4 +1,4 @@
-import nodemailer from 'nodemailer';
+const nodemailer = require('nodemailer');
 
 
 
@@ -35,4 +35,4 @@ const sendEmail = async (email, actionLink) => {
     }
 }
  
-export default sendEmail;
+module.exports = sendEmail;
