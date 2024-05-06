@@ -144,8 +144,10 @@ router.post('/send-custom-verification-email', async (req, res) => {
 
 app.use(`/.netlify/functions/api`, router);
 
-// app.listen(3000, () => {
-//   console.log('Server is running on port 3000')
-// })
+app.listen(3000, () => {
+  console.log('Server is running on port 3000')
+})
+
+
 module.exports = app;
 module.exports.handler = ServerlessHttp(app);
